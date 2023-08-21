@@ -1,0 +1,101 @@
+.container {
+  background-color: #fff;
+  color: black;
+  margin: 1.7rem 0;
+  width: 40rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 5px 4px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 0px 6px 5px 4px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 6px 5px 4px rgba(0, 0, 0, 0.43);
+}
+.marquee {
+  background-color: #111;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.marquee > div {
+  display: inline-block;
+}
+.marquee > div > div {
+  display: flex;
+}
+.marquee > div > div > p {
+  margin-right: 15px;
+  color: #fff;
+}
+.name {
+  display: inline-block;
+  margin-left: 2rem;
+
+  margin-top: 1rem;
+  color: #333;
+}
+.name > p {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+.name > h1 {
+  margin: 0.5rem 0 0 3rem;
+  font-size: 50px;
+  overflow: visible;
+}
+
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo > img {
+  width: 20rem;
+  overflow: hidden;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.info > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 2rem;
+}
+.info > ul > li {
+  font-size: 18px;
+}
+
+.purchase {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.price {
+  font-weight: 700;
+  font-size: 28px;
+  margin: 1rem 0;
+}
+.purchaseButton {
+  margin: 0;
+  border: #111 solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border-radius: 100000px;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+.purchaseButton:hover {
+  background-color: #111;
+
+  color: #eee;
+}
