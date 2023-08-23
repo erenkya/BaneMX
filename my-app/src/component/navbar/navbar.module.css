@@ -105,7 +105,8 @@
 }
 .menu > a:hover {
   text-decoration: none;
-  border-bottom: #000 2px solid;
+  color: #ddd;
+  border-bottom: #ddd 2px solid;
 }
 .mobilMenu {
   display: none;

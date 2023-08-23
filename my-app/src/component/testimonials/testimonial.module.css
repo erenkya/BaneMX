@@ -1,0 +1,17 @@
+.container {
+  margin: 10rem 0;
+  background-color: #ccc;
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.testimonialContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  background-color: brown;
+}
+.backgroundImage {
+}
