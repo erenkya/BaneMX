@@ -7,13 +7,35 @@
   right: auto;
   padding: 0;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   border-radius: 15px;
   align-items: center;
   justify-content: space-between;
   z-index: 9998;
   animation: closeModal 0.5s ease-in-out;
+}
+.redd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #dc2626;
+  color: #dc2626;
+  width: 160px;
+  height: 350px;
+  transform: skew(-45deg) scale(3.5);
+  z-index: 0;
+}
+.bluee {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #164196;
+  color: #164196;
+  width: 160px;
+  height: 350px;
+  transform: skew(45deg) scale(3.5);
+  z-index: 0;
 }
 .responsiveMenuItems {
   display: flex;
@@ -27,6 +49,22 @@
   margin-left: 15px;
   border-radius: 5px;
   background-color: #fff;
+}
+.red {
+  background-color: #dc2626;
+  color: #dc2626;
+  width: 20px;
+  height: 100%;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.blue {
+  background-color: #164196;
+  color: #164196;
+  width: 20px;
+  height: 100%;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
 }
 .logo > svg {
   width: 48px;
@@ -42,6 +80,7 @@
   font-weight: 700;
   color: #000;
   margin-left: 10px;
+  margin-right: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,9 +96,9 @@
 }
 .menu > a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 800;
   transition: 0.3s;
   border-bottom: transparent 2px solid;
   padding-bottom: 3px;
@@ -79,7 +118,7 @@
   cursor: pointer;
   width: 48px;
   height: 48px;
-  color: #000;
+  color: #fff;
   stroke: #000;
   margin-right: 5px;
 }
@@ -99,13 +138,18 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  z-index: 999;
+}
+.mobilNavOpenClose > button {
+  z-index: 999;
 }
 .mobilNavOpenClose > button > svg {
   cursor: pointer;
   width: 48px;
   height: 48px;
-  color: #000;
+  color: #fff;
   margin: 5px;
+  z-index: 999;
 }
 .mobilNavOpenMenu {
   display: flex;
@@ -139,7 +183,7 @@
   transition: 0.3s;
   padding: 7px;
   border: #000 solid 2px;
-  border-radius: 4px;
+  border-radius: 9999999px;
   margin-bottom: 2rem;
   transition: all 0.3s ease-in-out;
 }

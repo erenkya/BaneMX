@@ -15,6 +15,8 @@ const Navbar = () => {
     <React.Fragment>
       {mobilMenu && (
         <div className={style.mobilNavOpen}>
+          <div className={style.redd}>a</div>
+          <div className={style.bluee}>a</div>
           <div className={style.mobilNavOpenClose}>
             <button
               onClick={mobilButtonHandlerClose}
@@ -70,6 +72,7 @@ const Navbar = () => {
 
       <nav className={style.navbar}>
         <div className={style.logo}>
+          <div className={style.red}>a</div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="ionicon"
@@ -93,6 +96,7 @@ const Navbar = () => {
             <path d="M320 136a31.89 31.89 0 0032-32.1A31.55 31.55 0 00320.2 72a32 32 0 10-.2 64z" />
           </svg>
           <p>BaneMX</p>
+          <div className={style.blue}>a</div>
         </div>
         <div className={style.responsiveMenuItems}>
           <div className={style.menu}>
