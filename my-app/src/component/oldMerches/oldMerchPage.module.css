@@ -1,0 +1,44 @@
+.container {
+  background-color: rgba(51, 51, 51, 0.9);
+  height: 90vh;
+}
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titleContainer > p {
+  color: #ddd;
+  font-weight: 600;
+  font-size: 36px;
+}
+/* Slider card */
+.sliderCont {
+  margin: 0 50px 30px 50px;
+}
+
+.cardContainer {
+  margin: 15px;
+  height: 33rem;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 25px;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cardTop > img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* ----------- */
