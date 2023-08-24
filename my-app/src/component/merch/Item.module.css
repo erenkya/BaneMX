@@ -75,6 +75,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 .price {
   font-weight: 700;
@@ -98,4 +99,30 @@
   background-color: #111;
 
   color: #eee;
+}
+@media (max-width: 1350px) {
+  .container {
+    width: 35rem;
+  }
+}
+@media (max-width: 620px) {
+  .info {
+    flex-direction: column;
+  }
+  .container {
+    width: 30rem;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 25rem;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    width: 20rem;
+  }
+  .photo > img {
+    width: 15rem;
+  }
 }

@@ -7,13 +7,38 @@
   right: auto;
   padding: 0;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(4px);
   border-radius: 15px;
   align-items: center;
   justify-content: space-between;
   z-index: 9998;
   animation: closeModal 0.5s ease-in-out;
+}
+.navbar > a {
+  text-decoration: none;
+}
+.redd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #dc2626;
+  color: #dc2626;
+  width: 160px;
+  height: 350px;
+  transform: skew(-45deg) scale(3.5);
+  z-index: 0;
+}
+.bluee {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #164196;
+  color: #164196;
+  width: 160px;
+  height: 350px;
+  transform: skew(45deg) scale(3.5);
+  z-index: 0;
 }
 .responsiveMenuItems {
   display: flex;
@@ -27,6 +52,22 @@
   margin-left: 15px;
   border-radius: 5px;
   background-color: #fff;
+}
+.red {
+  background-color: #dc2626;
+  color: #dc2626;
+  width: 20px;
+  height: 100%;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.blue {
+  background-color: #164196;
+  color: #164196;
+  width: 20px;
+  height: 100%;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
 }
 .logo > svg {
   width: 48px;
@@ -42,6 +83,7 @@
   font-weight: 700;
   color: #000;
   margin-left: 10px;
+  margin-right: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,16 +99,17 @@
 }
 .menu > a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 800;
   transition: 0.3s;
   border-bottom: transparent 2px solid;
   padding-bottom: 3px;
 }
 .menu > a:hover {
   text-decoration: none;
-  border-bottom: #000 2px solid;
+  color: #ddd;
+  border-bottom: #ddd 2px solid;
 }
 .mobilMenu {
   display: none;
@@ -79,7 +122,7 @@
   cursor: pointer;
   width: 48px;
   height: 48px;
-  color: #000;
+  color: #fff;
   stroke: #000;
   margin-right: 5px;
 }
@@ -99,13 +142,22 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  z-index: 999;
+}
+.mobilNavOpenClose > button {
+  z-index: 999;
 }
 .mobilNavOpenClose > button > svg {
   cursor: pointer;
   width: 48px;
   height: 48px;
-  color: #000;
+  color: #fff;
   margin: 5px;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+.mobilNavOpenClose > button > svg:hover {
+  transform: scale(1.1);
 }
 .mobilNavOpenMenu {
   display: flex;
@@ -133,13 +185,15 @@
 }
 .mobilNavOpenMenu > a {
   text-decoration: none;
+  text-align: center;
   color: #000;
   font-size: 18px;
   font-weight: 500;
   transition: 0.3s;
   padding: 7px;
+  width: 10rem;
   border: #000 solid 2px;
-  border-radius: 4px;
+  border-radius: 9999999px;
   margin-bottom: 2rem;
   transition: all 0.3s ease-in-out;
 }
@@ -148,6 +202,43 @@
   background-color: #ccc;
 }
 
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+.loginContainer > button {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
+  transition: 0.3s;
+  border: #000 2px solid;
+  border-radius: 9999999px;
+  width: 7rem;
+  height: 2.5rem;
+
+  cursor: pointer;
+}
+.loginContainer > button:hover {
+  background-color: rgba(0, 0, 0, 0.01);
+  border: transparent 2px solid;
+  color: #fff;
+}
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.welcome > p {
+  color: #ddd;
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+}
 @media (max-width: 975px) {
   .menu {
     display: none;
@@ -156,7 +247,56 @@
     display: inline-block;
   }
 }
+@media (max-width: 800px) {
+  .redd {
+    display: none;
+  }
+  .bluee {
+    display: none;
+  }
+  .mobilNavOpenClose > button > svg {
+    color: #000;
+  }
+}
+@media (max-width: 570px) {
+  .mobilNavOpenMenu {
+    padding: 0;
+    width: 100%;
 
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .mobilNavOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobilNavOpenClose {
+    width: 100%;
+    display: flex;
+    align-items: end;
+  }
+  .mobilNavOpenMenu > a {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 425px) {
+  .welcome {
+    margin-right: 0;
+  }
+  .welcome > p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 405px) {
+  .welcome {
+    display: none;
+  }
+}
 @keyframes closeModal {
   0% {
     opacity: 0.3;
