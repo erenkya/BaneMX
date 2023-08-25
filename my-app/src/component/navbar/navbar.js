@@ -239,6 +239,8 @@ const Navbar = () => {
             <a href="">Previous Merches</a>
             <a href="">Testimonials</a>
             <a href="">Contact Us</a>
+          </div>
+          <div>
             {!isUserLoggedin[0] && (
               <div className={style.loginContainer}>
                 <button onClick={openLoginPage}>Login</button>
@@ -251,27 +253,27 @@ const Navbar = () => {
                 <button onClick={logoutHandler}>Logout</button>
               </div>
             )}
-          </div>
-          <div className={style.mobilMenu}>
-            <button
-              onClick={mobilButtonHandlerOpen}
-              className={style.mobilMenuButton}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="ionicon"
-                viewBox="0 0 512 512"
+            <div className={style.mobilMenu}>
+              <button
+                onClick={mobilButtonHandlerOpen}
+                className={style.mobilMenuButton}
               >
-                <path
-                  fill="#fff"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-miterlimit="10"
-                  stroke-width="32"
-                  d="M80 160h352M80 256h352M80 352h352"
-                />
-              </svg>
-            </button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="ionicon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#fff"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M80 160h352M80 256h352M80 352h352"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </nav>

@@ -24,7 +24,7 @@ const logIn = (enteredEmail, enteredPassword) => {
     localStorage.setItem("mail", user.mail);
     return true;
   } else {
-    alert("Kullanıcı adı veya şifre hatalı");
+    alert("Email or password is wrong!");
     return false;
   }
 };
