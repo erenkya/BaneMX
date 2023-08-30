@@ -199,6 +199,16 @@ const Navbar = () => {
             <a href="">Previous Merches</a>
             <a href="">Testimonials</a>
             <a href="">Contact Us</a>
+            {!isUserLoggedin[0] && (
+              <div className={style.loginContainerm}>
+                <button onClick={openLoginPage}>Login</button>
+              </div>
+            )}
+            {isUserLoggedin[0] && (
+              <div className={style.loginContainerm}>
+                <button onClick={logoutHandler}>Logout</button>
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -240,6 +250,7 @@ const Navbar = () => {
             <a href="">Testimonials</a>
             <a href="">Contact Us</a>
           </div>
+
           <div>
             {!isUserLoggedin[0] && (
               <div className={style.loginContainer}>

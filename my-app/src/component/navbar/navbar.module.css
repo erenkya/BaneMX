@@ -226,6 +226,29 @@
   border: transparent 2px solid;
   color: #fff;
 }
+.loginContainerm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginContainerm > button {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
+  transition: 0.3s;
+  border: #000 2px solid;
+  border-radius: 9999999px;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: #fff;
+
+  cursor: pointer;
+}
+.loginContainerm > button:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+}
 .welcome {
   display: flex;
   align-items: center;
@@ -241,6 +264,9 @@
 }
 @media (max-width: 975px) {
   .menu {
+    display: none;
+  }
+  .loginContainer {
     display: none;
   }
   .mobilMenu {
